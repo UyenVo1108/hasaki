@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>hasakivn</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/product.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css"
+      integrity="sha512-X/RSQYxFb/tvuz6aNRTfKXDnQzmnzoawgEQ4X8nZNftzs8KFFH23p/BA6D2k0QCM4R0sY1DEy9MIY9b3fwi+bg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css"
+      integrity="sha512-f28cvdA4Bq3dC9X9wNmSx21rjWI+5piIW/uoc2LuQ67asKxfQjUow2MkcCNcfJiaLrHcGbed1wzYe3dlY4w9gA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/app.css" />
+  </head>
+  <body>
+    <div
+      class="offcanvas offcanvas-top"
+      tabindex="-1"
+      id="offcanvasSearch"
+      aria-labelledby="offcanvasTopLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasTopLabel"></h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div
+        class="offcanvas-body d-flex justify-content-center align-items-center"
+      >
+        <form class="d-flex w-50 justify-content-center" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="d-block btn btn-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+    <header class="container-fluid">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="img/download.png" alt="" width="50" height="50"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active fs-6 fw-medium"
+                  aria-current="page"
+                  href="home.html"
+                  >Trang Chủ</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active fs-6 fw-medium"
+                  aria-current="page"
+                  href="#"
+                  >Giới thiệu</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active fs-6 fw-medium"
+                  aria-current="page"
+                  href="#"
+                  >Liên hệ</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active fs-6 fw-medium"
+                  aria-current="page"
+                  href="#"
+                  >Mỹ phẩm</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active fs-6 fw-medium"
+                  aria-current="page"
+                  href="#"
+                  >Mặt Nạ</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Chăm sóc tóc
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Dầu gội</a></li>
+                  <li><a class="dropdown-item" href="#">Kem xả</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"></li>
+            </ul>
+            <div
+              class="header-top-right d-flex align-items-center gap-3 fs-6 fw-medium"
+            >
+              <div
+                href=""
+                class="d-flex align-items-center gap-2 hover-list cursor"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasSearch"
+                aria-controls="offcanvasTop"
+              >
+                <ion-icon class="fs-4" name="search"></ion-icon>
+                <span>Search</span>
+              </div>
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown hover-list">
+                  <a
+                    class="account nav-link d-flex align-items-center gap-2"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <ion-icon class="fs-4" name="person"></ion-icon>
+                    <span>Account</span>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item" href="#!signup">Register</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#!checkout">Checkout</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#!setting">Settings</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="login.html">Login</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <a
+  href="shop.html"
+  class="d-flex text-decoration-none text-dark align-items-center gap-2 hover-list cursor"
+>
+  <ion-icon class="fs-4" name="heart"></ion-icon>
+  <span>Wishlist</span>
+</a>
+
+              <div
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"
+                id="cart-click"
+                href=""
+                class="header-top-right-item header-cart d-flex align-items-center gap-2 hover-list cursor"
+              >
+                <!-- <span class="quality px-2 fs-6 rounded-5 bg-primary text-white"
+            >1</span
+          > -->
+                <ion-icon class="fs-4 fw-bold" name="cart"></ion-icon>
+                <span>Cart</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="container my-5">
+      <div class="row">
+        <div class="left col-4">
+          <div class="big-img">
+            <img src="img/22.jpg" oneclick="showImg(this.src)" class="w-100" />
+          </div>
+          <div class="owl-carousel owl-theme">
+            <div class="item"><img src="img/27.jpg" alt="" width="100%" /></div>
+            <div class="item"><img src="img/28.jpg" alt="" width="100%" /></div>
+            <div class="item"><img src="img/26.jpg" alt="" width="100%" /></div>
+            <div class="item"><img src="img/25.jpg" alt="" width="100%" /></div>
+            <div class="item"><img src="img/24.png" alt="" width="100%" /></div>
+            <div class="item"><img src="img/29.jpg" alt="" width="100%" /></div>
+          </div>
+        </div>
+        <div class="col-8 d-flex flex-column gap-4">
+          <h1 class="fw-bolder fs-4">
+            [9 mùi] Mặt Nạ Tinh Chất Cấp Ẩm Chuyên Sâu Jkosmec Ultimate
+            Hydrating Essence Mask
+          </h1>
+          <div class="price d-flex gap-3">
+            <div class="price-old">
+              <del class="fs-3 fw-bolder text-secondary">24,000₫</del>
+            </div>
+            <div class="price-new">
+              <span class="fs-3 fw-bolder">7,000₫ - 8,000₫</span>
+            </div>
+          </div>
+          <ul class="p-0">
+            <li
+              class="list-group-item text-primary fs-5 d-flex align-items-center gap-2"
+            >
+              <ion-icon name="checkmark-outline"></ion-icon>
+              In stock
+            </li>
+            <li
+              class="list-group-item text-primary fs-5 d-flex align-items-center gap-2"
+            >
+              <ion-icon name="checkmark-outline"></ion-icon>
+              Free delivery available
+            </li>
+            <li
+              class="list-group-item text-primary fs-5 d-flex align-items-center gap-2"
+            >
+              <ion-icon name="checkmark-outline"></ion-icon>
+              Sales 30% Off Use Code: MOTIVE30
+            </li>
+          </ul>
+          <div class="des">
+            <span class="fs-5 fw-light text-secondary"
+              >In ornare lorem ut est dapibus, ut tincidunt nisi pretium.
+              Integer ante est, elementum eget magna. Pellentesque sagittis
+              dictum libero, eu dignissim tellus.</span
+            >
+          </div>
+
+          <div class="size d-flex align-items-center gap-3">
+            <div class="size-main d-flex gap-3">
+              <ion-icon class="text-warning" name="star"></ion-icon>
+              <ion-icon class="text-warning" name="star"></ion-icon>
+              <ion-icon class="text-warning" name="star"></ion-icon>
+              <ion-icon class="text-warning" name="star"></ion-icon>
+              <ion-icon class="text-warning" name="star"></ion-icon>
+            </div>
+          </div>
+          <div class="quantity">
+            <span class="fs-5 fw-medium">Quantity:</span>
+            <input type="number" value="1" max="10" min="1" class="fs-5 ms-2" />
+          </div>
+          <div class="btn-addcart">
+            <div class="btn btn-success fw-bolder btn px-5">Add to cart</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="footer-content col-lg-3 col-sm-6">
+            <h3 class="text-white">Contact Us</h3>
+            <p class="text-white">Email: Inform@gmail.com</p>
+            <p class="text-white">Phone: +121 5655 5655</p>
+            <p class="text-white">Address: Huynh Thi Hai street</p>
+          </div>
+          <div class="footer-content col-lg-3 col-sm-6">
+            <h3 class="text-white">Quick Link</h3>
+            <ul class="list">
+              <li><a class="text-white" href="">Home</a></li>
+              <li><a class="text-white" href="">About</a></li>
+              <li><a class="text-white" href="">Services</a></li>
+              <li><a class="text-white" href="">Products</a></li>
+              <li><a class="text-white" href="">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-content col-lg-3 col-sm-6">
+            <h3 class="text-white">Quick Link</h3>
+            <ul class="list">
+              <li><a class="text-white" href="">Home</a></li>
+              <li><a class="text-white" href="">About</a></li>
+              <li><a class="text-white" href="">Services</a></li>
+              <li><a class="text-white" href="">Products</a></li>
+              <li><a class="text-white" href="">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-content col-lg-3 col-sm-6">
+            <h3 class="text-white">Follow Us</h3>
+            <ul class="social-icons">
+              <li>
+                <a class="text-white" href=""
+                  ><ion-icon class="fs-3" name="logo-facebook"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a class="text-white" href=""
+                  ><ion-icon class="fs-3" name="logo-instagram"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a class="text-white" href=""
+                  ><ion-icon class="fs-3" name="logo-twitter"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a class="text-white" href=""
+                  ><ion-icon class="fs-3" name="logo-linkedin"></ion-icon
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-bar">
+        <p class="text-white">&copy; 2024 your company.All rights reserved</p>
+      </div>
+    </footer>
+    <script>
+      let bigImg = document.querySelector(".big-img img");
+      function showImg(pic) {
+        bigImg.src = pic;
+      }
+    </script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"
+      integrity="sha512-9CWGXFSJ+/X0LWzSRCZFsOPhSfm6jbnL+Mpqo0o8Ke2SYr8rCTqb4/wGm+9n13HtDE1NQpAEOrMecDZw4FXQGg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        item: 4,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 5,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

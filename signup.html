@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>https://www.signup.com</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 62.5%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body {
+            background-color: rgb(151, 149, 149);
+        }
+        .header {
+            background-color: #fff;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 4rem;
+        }
+        .header .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #4267b2;
+            text-transform: uppercase;
+        }
+        .header nav {
+            margin-top: 1rem;
+        }
+        .header nav a {
+            font-size: 1.4rem;
+            color: #555;
+            margin-right: 2rem;
+            text-decoration: none;
+        }
+        .header nav a:hover {
+            color: #4267b2;
+        }
+        .container {
+            background-color: #fff;
+            max-width: 40rem;
+            margin: 4rem auto;
+            padding: 2.4rem 2rem;
+            border-radius: 1rem;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 2.4rem;
+        }
+        input, .btn {
+            width: 100%;
+            padding: 1.2rem;
+            font-size: 1.4rem;
+            border-radius: 5px;
+            border: 1px solid #777;
+            margin-bottom: 1.0rem;
+        }
+        .btn-submit {
+            background-color: rgb(72, 76, 95);
+            color: #fff;
+        }
+        label {
+            display: inline-block;
+            font-size: 1.4rem;
+            color: #555;
+            margin-bottom: 0.8rem;
+        }
+        .link {
+            display: inline-block;
+            font-size: 1.2rem;
+            color: #4267b2;
+            margin-bottom: 2rem;
+            margin-left: 0.8rem;
+        }
+        .line {
+            display: inline-block;
+            border-bottom: solid 1px #333;
+            width: 44%;
+        }
+        .center {
+            color: #777;
+            margin: 0 0.8rem;
+            font-size: 1.4rem;
+        }
+        .error-message {
+            color: red;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            display: none;
+        }
+    </style>
+</head>
+<body> 
+
+    <div class="container">
+        <form>
+            <h1>Sign Up</h1>
+            <label for="fullName">Full Name</label><br>
+            <input type="text" id="fullName" placeholder="Enter your name"><br>
+            <div id="name-error" class="error-message"></div>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email" placeholder="Enter your email"><br>
+            <div id="email-error" class="error-message"></div>
+
+            <label for="phoneNumber">Phone Number</label><br>
+            <input type="tel" id="phoneNumber" placeholder="Enter phone number"><br>
+            <div id="phone-error" class="error-message"></div>
+
+            <label for="password">Password</label><br>
+            <input type="password" id="password" placeholder="Enter your password"><br>
+            <div id="password-error" class="error-message"></div>
+
+            <label for="passwordConfirm">Password Confirm</label><br>
+            <input type="password" id="passwordConfirm" placeholder="Enter password again"><br>
+            <div id="passwordConfirm-error" class="error-message"></div>
+            <button id="submit" type="submit" class="btn-submit btn fs-3 fw-bold">Signup</button>
+        </form>
+    </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+    <script src="../assets/js/signup.js"></script>
+</body>
+</html>

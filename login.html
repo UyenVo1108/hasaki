@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>https://www.login.com</title> 
+       
+        <style>
+           *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color:rgb(151, 149, 149);
+}
+.container{
+    background-color: #fff;
+    max-width: 40rem;
+    margin: 4rem auto;
+    padding: 2.4rem 2rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+h1{
+    margin-bottom: 2.4rem;
+}
+input , .btn{
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    border: 1px solid #777;
+    margin-bottom: 1.0rem;
+}
+.btn-submit {
+    background-color: rgb(72, 76, 95);
+    color: #fff;
+}
+label{
+    display: inline-block;
+    font-size: 1.4rem;
+    color: #555;
+    margin-bottom: 0.8rem;
+}
+*{
+    text-decoration: none;
+}
+.link{
+    display: inline-block;
+    font-size: 1.2rem;
+    color: #4267b2 ;
+    margin-bottom: 2rem;
+    margin-left: 0.8rem;
+}
+.line{
+    display: inline-block;
+    border-bottom: solid 1px #333;
+    width: 44%;
+}
+.center{
+    color: #777;
+    margin: 0 0.8rem;
+    font-size: 1.4rem;
+}
+ 
+        </style>
+    </head>
+    <body>
+          <div class="container">
+            <form action="#">
+               <h1>LOGIN</h1>
+               <label for="email">Email</label> <br>
+               <input type="email" id="email" placeholder="Enter your email"> <br>
+               <label for="password">Password</label> <br>
+               <input type="password" id="password" placeholder="Enter your password"> <br>
+               <a href="#" class="link forgot" target="_blank">Forgot Password?</a> <br>
+               <a href="signup.html" class="link" target="_blank">SignUp</a> <br>
+               <input type="submit" value="Login" class="btn-submit"> <br>                                
+              
+            </form>
+          </div>
+          <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+          <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+          <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+          <script src="../assets/js/login.js"></script>
+    </body>
+</html>
