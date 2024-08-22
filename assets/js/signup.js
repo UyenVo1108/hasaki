@@ -66,7 +66,7 @@ function success(){
         icon: "success",
         button: "Continue",
       }).then(() => {
-        window.location.href = "main.html";
+        window.location.href = "home.html";
       });
 }
 function saveToLocalStorage(fullName,email,phoneNumber,pass){
