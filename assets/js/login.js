@@ -30,6 +30,6 @@ function success(){
         icon:"success",
         button:"continue",
     }).then(()=> {
-        window.location.href = "main.html";
+        window.location.href = "home.html";
     });
 }    
